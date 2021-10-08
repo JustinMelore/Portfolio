@@ -1,3 +1,4 @@
 Homepage for desktop display: https://wireframe.cc/0pu20c
 Homepage for mobile portrait view: https://wireframe.cc/TxWv0I
 Homepage for mobile landscape view: https://wireframe.cc/hl6Mgu
+768 400
