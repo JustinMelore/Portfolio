@@ -1,0 +1,16 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#navName {
+  font-family: "Monoton", cursive;
+  color: skyblue;
+  font-size: 1.5vw;
+}
+
+nav p {
+  margin-top: 0%;
+}
