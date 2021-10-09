@@ -1,16 +1,48 @@
 nav {
+  box-sizing: border-box;
+  width: 95vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
-}
-
-#navName {
-  font-family: "Monoton", cursive;
-  color: skyblue;
-  font-size: 1.5vw;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 nav p {
   margin-top: 0%;
+}
+
+nav div {
+  display: flex;
+  flex-direction: column;
+  font-family: "Monoton", cursive;
+  color: lightgreen;
+  font-size: 1.5vw;
+}
+
+nav span {
+  color: lightskyblue;
+}
+
+nav::before {
+  content: "";
+  width: 10%;
+  height: 9%;
+  border-top: 5px solid coral;
+  border-left: 5px solid coral;
+  position: absolute;
+  top: 0;
+  left: 1vw;
+}
+
+nav::after {
+  content: "";
+  width: 10%;
+  height: 3%;
+  border-bottom: 5px solid coral;
+  border-right: 5px solid coral;
+  position: absolute;
+  top: 4vh;
+  right: 1vw;
 }
