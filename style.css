@@ -1,4 +1,4 @@
-nav {
+/* nav {
   box-sizing: border-box;
   width: 95vw;
   display: flex;
@@ -16,7 +16,7 @@ nav a {
 nav div {
   display: flex;
   flex-direction: column;
-  font-family: "Monoton", cursive;
+  font-family: 'Monoton', cursive;
   color: lightgreen;
   font-size: 1.5vw;
 }
@@ -26,7 +26,7 @@ nav span {
 }
 
 nav::before {
-  content: "";
+  content: '';
   width: 10%;
   height: 9%;
   border-top: 5px solid coral;
@@ -37,7 +37,7 @@ nav::before {
 }
 
 nav::after {
-  content: "";
+  content: '';
   width: 10%;
   height: 3%;
   border-bottom: 5px solid coral;
@@ -45,4 +45,4 @@ nav::after {
   position: absolute;
   top: 4vh;
   right: 1vw;
-}
+} */
