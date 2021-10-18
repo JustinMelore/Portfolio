@@ -1,48 +1,103 @@
-/* nav {
+/*Webpage Colors*/
+:root {
+  --gray-background: #152424;
+  --light-green: #0ef0c1;
+  --light-blue: #1c90fc;
+}
+
+/*Navbar Styling (Desktop Version)*/
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 5vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  color: var(--light-green);
+}
+
+#navbar img {
   box-sizing: border-box;
-  width: 95vw;
+  width: 17vw;
+  background-color: var(--gray-background);
+  border-radius: 50%;
+  padding: 1vw;
+}
+
+nav {
+  box-sizing: border-box;
+  width: 60vw;
+  height: 20vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-right: auto;
-  margin-left: auto;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border: 0.5vw solid transparent;
+  padding: 1vw;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  font-size: 1.5vw;
+  border-radius: 10vw;
+  background-color: var(--gray-background);
 }
 
 nav a {
   margin-top: 0%;
 }
 
-nav div {
+#navbar div {
   display: flex;
+  padding-top: 1vh;
   flex-direction: column;
-  font-family: 'Monoton', cursive;
-  color: lightgreen;
-  font-size: 1.5vw;
+  font-size: 2.5vw;
 }
 
-nav span {
-  color: lightskyblue;
+/*About Me Styling (Desktop)*/
+
+#aboutMe {
+  display: flex;
+  z-index: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+  background-image: url(images/aboutMeBackground.svg);
+  background-size: 100%;
+  font-size: 1vw;
+  padding-top: 10vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
-nav::before {
-  content: '';
-  width: 10%;
-  height: 9%;
-  border-top: 5px solid coral;
-  border-left: 5px solid coral;
-  position: absolute;
-  top: 0;
-  left: 1vw;
+#aboutMe p {
+  width: 50vw;
 }
 
-nav::after {
-  content: '';
-  width: 10%;
-  height: 3%;
-  border-bottom: 5px solid coral;
-  border-right: 5px solid coral;
-  position: absolute;
-  top: 4vh;
-  right: 1vw;
-} */
+#aboutMe img {
+  width: 20vw;
+  background-color: var(--gray-background);
+  border: 0.25vw solid var(--light-green);
+  border-radius: 100%;
+}
+
+#triangle {
+  width: 0;
+  height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  border-left: 20vw solid transparent;
+  border-right: 20vw solid transparent;
+  border-bottom: 10vh solid var(--light-blue);
+}
+body {
+  background-image: url(images/mainBackground.svg);
+  background-size: 100%;
+  margin: 0%;
+}
