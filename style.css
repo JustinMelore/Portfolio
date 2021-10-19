@@ -47,6 +47,7 @@ nav {
 
 nav a {
   margin-top: 0%;
+  color: var(--light-green);
 }
 
 #navbar div {
@@ -119,18 +120,6 @@ nav a {
   filter: contrast(1.75);
 }
 
-/* #aboutMe */
-a {
-  transition: color 0.5s, font-size 0.5s;
-}
-
-/* #aboutMe  */
-a:hover {
-  color: var(--orange);
-  font-size: 125%;
-  transition: color 0.5s, font-size 0.5s;
-}
-
 #aboutMe img {
   width: 30vw;
   height: 30vw;
@@ -148,8 +137,20 @@ a:hover {
   transition: filter 0.5s, height 0.5s, width 0.5s;
 }
 
+/*Universal  Styling*/
 body {
   background-image: url(images/mainBackground.svg);
   background-size: 100%;
   margin: 0%;
+}
+
+a {
+  transition: color 0.5s, font-size 0.5s;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--orange);
+  font-size: 125%;
+  transition: color 0.5s, font-size 0.5s;
 }
