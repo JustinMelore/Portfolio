@@ -35,7 +35,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   display: flex;
-  z-index: 1;
   border: 0.5vw solid transparent;
   padding: 1vw;
   padding-top: 0.5vh;
@@ -80,9 +79,7 @@ nav a {
 
 #aboutMe {
   display: flex;
-  z-index: 1;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   position: relative;
   width: auto;
   margin-left: 0;
@@ -94,14 +91,11 @@ nav a {
   padding-left: 5vw;
   padding-right: 5vw;
   font-family: "Vast Shadow", cursive;
-}
-
-#aboutMeMain {
   color: var(--gray-background);
   transition: color 0.5s;
 }
 
-#aboutMeMain:hover {
+#aboutMe:hover {
   color: var(--light-green);
   transition: color 0.5s;
 }
@@ -112,15 +106,18 @@ nav a {
   text-align: center;
   margin-bottom: 2vh;
   filter: contrast(1.75);
+  width: 50vw;
+  transform: translateY(-15vh);
 }
 
 #aboutMe p {
   width: 50vw;
   padding: 1vw;
   filter: contrast(1.75);
+  transform: translateY(-15vh);
 }
 
-#aboutMe img {
+#mainPicture {
   width: 30vw;
   height: 30vw;
   background-color: var(--gray-background);
@@ -128,13 +125,44 @@ nav a {
   border-radius: 100%;
   filter: sepia(100%) grayscale(100%) brightness(75%);
   transition: filter 0.5s, height 0.5s, width 0.5s;
+  position: absolute;
+  top: 45vh;
+  right: 5vw;
 }
 
-#aboutMe img:hover {
+#mainPicture:hover {
   filter: none;
   width: 35vw;
   height: 35vw;
   transition: filter 0.5s, height 0.5s, width 0.5s;
+}
+
+/*Footer Styling (Desktop)*/
+footer {
+  box-sizing: border-box;
+  background-color: var(--gray-background);
+  color: var(--light-green);
+  width: auto;
+  height: 15vh;
+  padding-top: 3vh;
+  display: grid;
+  justify-items: center;
+  font-size: 1vw;
+}
+
+footer p {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 20vw;
+}
+
+footer a {
+  color: var(--light-green);
+  text-decoration: underline;
+}
+
+footer a:hover {
+  font-size: 1vw;
 }
 
 /*Universal  Styling*/
