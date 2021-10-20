@@ -129,7 +129,7 @@ nav a {
   filter: sepia(100%) grayscale(100%) brightness(75%);
   transition: filter 0.5s, width 1s;
   position: absolute;
-  top: 45vh;
+  top: 40vh;
   right: 5vw;
   z-index: 1;
 }
@@ -188,6 +188,7 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 #contactMe h1 {
@@ -197,8 +198,62 @@ footer a:hover {
 
 #contactMe p {
   width: 50vw;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5vw;
+  margin: 0;
+}
+
+#contactMe a {
+  width: 15vw;
+  position: absolute;
+  top: 22%;
+  transition: filter 0.5s, top 0.5s;
+}
+
+#contactMe a:hover {
+  filter: invert(100%);
+  top: 17%;
+  transition: filter 0.5s, top 0.5s;
+}
+
+/*Temporary Page Styling*/
+#temporaryBody {
+  background-image: url(images/temporary.svg);
+  background-size: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#temporary {
+  box-sizing: border-box;
+  padding: 1vw;
+  width: 100vh;
+  height: 75vh;
   display: flex;
-  justify-self: end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-green);
+  font-family: "Vast Shadow", cursive;
+  background-color: var(--gray-background);
+  border: 0.5vw solid var(--light-green);
+  border-radius: 1vw;
+}
+
+#temporary h1 {
+  font-size: 3vw;
+}
+
+#temporary p {
+  width: 40vw;
+  font-size: 2vw;
+}
+
+#temporary img {
+  width: 10vw;
+  filter: invert(100%) brightness(90%);
 }
 
 /*Universal  Styling*/
