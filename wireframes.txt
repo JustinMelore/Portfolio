@@ -1,4 +1,5 @@
 Homepage for desktop display: https://wireframe.cc/0pu20c
 Homepage for mobile portrait view: https://wireframe.cc/TxWv0I
 Homepage for mobile landscape view: https://wireframe.cc/hl6Mgu
+IMPORTANT: THE HOMEPAGE HAS BEEN SPLIT UP INTO SEPERATE PAGES. THE LAYOUTS OF THE SECTIONS OF THE HOMEPAGE ARE THE SAME, THEY'RE JUST ON THEY'RE OWN PAGES NOW
 768 400

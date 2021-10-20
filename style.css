@@ -61,7 +61,7 @@ nav a {
   width: 0.25vw;
   position: absolute;
   background-color: var(--light-green);
-  top: 5vh;
+  top: 0;
   left: 13vw;
 }
 
@@ -95,7 +95,11 @@ nav a {
   transition: color 0.5s;
 }
 
-#aboutMe:hover {
+#aboutMeMain {
+  width: 50vw;
+}
+
+#aboutMeMain:hover {
   color: var(--light-green);
   transition: color 0.5s;
 }
@@ -119,22 +123,25 @@ nav a {
 
 #mainPicture {
   width: 30vw;
-  height: 30vw;
   background-color: var(--gray-background);
   border: 0.25vw solid var(--light-green);
   border-radius: 100%;
   filter: sepia(100%) grayscale(100%) brightness(75%);
-  transition: filter 0.5s, height 0.5s, width 0.5s;
+  transition: filter 0.5s, width 1s;
   position: absolute;
   top: 45vh;
   right: 5vw;
+  z-index: 1;
 }
 
 #mainPicture:hover {
   filter: none;
   width: 35vw;
-  height: 35vw;
-  transition: filter 0.5s, height 0.5s, width 0.5s;
+  transition: filter 0.5s, width 0.5s;
+}
+
+#bodyContainer {
+  padding-bottom: 15vh;
 }
 
 /*Footer Styling (Desktop)*/
@@ -142,12 +149,16 @@ footer {
   box-sizing: border-box;
   background-color: var(--gray-background);
   color: var(--light-green);
-  width: auto;
+  width: 100vw;
   height: 15vh;
   padding-top: 3vh;
   display: grid;
   justify-items: center;
   font-size: 1vw;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  z-index: auto;
 }
 
 footer p {
@@ -165,11 +176,38 @@ footer a:hover {
   font-size: 1vw;
 }
 
+/*Contact Info Styling (Desktop)*/
+#contactMe {
+  font-family: "Vast Shadow", cursive;
+  color: var(--light-green);
+  height: 50.25vh;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contactMe h1 {
+  font-size: 3vw;
+  width: 50vw;
+}
+
+#contactMe p {
+  width: 50vw;
+  display: flex;
+  justify-self: end;
+}
+
 /*Universal  Styling*/
 body {
   background-image: url(images/mainBackground.svg);
   background-size: 100%;
   margin: 0%;
+  position: relative;
+  min-height: 100vh;
 }
 
 a {
