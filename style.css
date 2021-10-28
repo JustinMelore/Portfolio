@@ -81,26 +81,22 @@ nav a {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: auto;
+  width: 100%;
+  height: 100%;
   margin-left: 0;
   margin-right: 0;
   background-image: url(images/aboutMeBackground.svg);
-  background-size: 100%;
-  font-size: 1vw;
-  padding-top: 10vh;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  font-family: 'Vast Shadow', cursive;
+  background-size: cover;
+  font-size: 1.6vw;
+  font-family: "Vast Shadow", cursive;
   color: var(--gray-background);
   transition: color 0.5s;
-}
-
-#aboutMeMain {
-  width: 50vw;
+  box-sizing: border-box;
+  flex-wrap: wrap;
   transition: color 0.5s;
 }
 
-#aboutMeMain:hover {
+#aboutMe:hover {
   color: var(--light-green);
   transition: color 0.5s;
 }
@@ -110,20 +106,24 @@ nav a {
   font-style: italic;
   text-align: center;
   margin-bottom: 2vh;
+  margin-top: 0;
   filter: contrast(1.75);
   width: 50vw;
-  transform: translateY(-15vh);
 }
 
-#aboutMe p {
+#aboutMe div {
   width: 50vw;
-  padding: 1vw;
   filter: contrast(1.75);
-  transform: translateY(-15vh);
+  margin-left: 1vw;
+  margin-bottom: 0;
+}
+
+#aboutMe div a {
+  font-size: 1.6vw;
 }
 
 #mainPicture {
-  width: 30vw;
+  width: 40vw;
   background-color: var(--gray-background);
   border: 0.25vw solid var(--light-green);
   border-radius: 100%;
@@ -137,12 +137,16 @@ nav a {
 
 #mainPicture:hover {
   filter: none;
-  width: 35vw;
+  width: 45vw;
   transition: filter 0.5s, width 0.5s;
 }
 
-#bodyContainer {
-  padding-bottom: 15vh;
+.container {
+  height: 100%;
+}
+
+/*About Me Styling (Landscape view)*/
+@media (max-width: 768px) {
 }
 
 /*Footer Styling (Desktop)*/
@@ -151,14 +155,11 @@ footer {
   background-color: var(--gray-background);
   color: var(--light-green);
   width: 100%;
-  height: 15vh;
-  padding-top: 3vh;
+  height: auto;
+  padding-top: 1vh;
   display: grid;
   justify-items: center;
-  font-size: 1vw;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
+  font-size: 2vh;
   z-index: auto;
 }
 
@@ -166,6 +167,7 @@ footer p {
   margin-top: 0;
   margin-bottom: 0;
   width: 20vw;
+  margin: 1vh;
 }
 
 footer a {
@@ -174,14 +176,14 @@ footer a {
 }
 
 footer a:hover {
-  font-size: 1vw;
+  font-size: 2vh;
 }
 
 /*Contact Info Styling (Desktop)*/
 #contactMe {
-  font-family: 'Vast Shadow', cursive;
+  font-family: "Vast Shadow", cursive;
   color: var(--light-green);
-  height: 50.25vh;
+  height: 65vh;
   width: auto;
   margin-left: auto;
   margin-right: auto;
@@ -190,38 +192,51 @@ footer a:hover {
   flex-direction: column;
   align-items: center;
   position: relative;
+  box-sizing: border-box;
 }
 
 #contactMe h1 {
   font-size: 3vw;
   width: 50vw;
+  margin: 0;
 }
 
 #contactMe p {
   width: 50vw;
-  position: absolute;
-  bottom: 0;
-  font-size: 1.5vw;
+  font-size: 2vw;
   margin: 0;
 }
 
 #contactMe a {
   width: 15vw;
-  position: absolute;
-  top: 22%;
-  transition: filter 0.5s, top 0.5s;
+  transition: filter 0.5s, transform 0.5s;
 }
 
 #contactMe a:hover {
   filter: invert(100%);
-  top: 17%;
-  transition: filter 0.5s, top 0.5s;
+  transform: translateY(-3vh);
+  transition: filter 0.5s, transform 0.5s;
+}
+
+/*Experiences Page Styling*/
+#experiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#experiences h1 {
+  width: 50vw;
+}
+
+#experiences p {
+  width: 50vw;
 }
 
 /*Temporary Page Styling*/
 #temporaryBody {
   background-image: url(images/temporary.svg);
-  background-size: 100%;
+  background-size: cover;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -237,7 +252,7 @@ footer a:hover {
   align-items: center;
   justify-content: center;
   color: var(--light-green);
-  font-family: 'Vast Shadow', cursive;
+  font-family: "Vast Shadow", cursive;
   background-color: var(--gray-background);
   border: 0.5vw solid var(--light-green);
   border-radius: 1vw;
@@ -258,12 +273,17 @@ footer a:hover {
 }
 
 /*Universal  Styling*/
-body {
+html {
+  height: 100%;
+}
+
+html body {
   background-image: url(images/mainBackground.svg);
-  background-size: 100%;
-  margin: 0%;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
   position: relative;
-  min-height: 100vh;
+  height: 100%;
 }
 
 a {
