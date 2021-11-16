@@ -508,43 +508,47 @@
 }
 
 /*Contact Info Styling (Desktop)*/
-#contactMe {
-  font-family: 'Vast Shadow', cursive;
-  color: var(--light-green);
-  height: 65vh;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  box-sizing: border-box;
+@media only screen and (orientation: landscape) and (min-width: 1025px) {
+  #contactMe {
+    font-family: 'Vast Shadow', cursive;
+    color: var(--light-green);
+    height: 65vh;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  #contactMe h1 {
+    font-size: 3vw;
+    width: 50vw;
+    margin: 0;
+  }
+
+  #contactMe p {
+    width: 50vw;
+    font-size: 2vw;
+    margin: 0;
+  }
+
+  #contactMe a {
+    width: 15vw;
+    transition: filter 0.5s, transform 0.5s;
+  }
+
+  #contactMe a:hover {
+    filter: invert(100%);
+    transform: translateY(-3vh);
+    transition: filter 0.5s, transform 0.5s;
+  }
 }
 
-#contactMe h1 {
-  font-size: 3vw;
-  width: 50vw;
-  margin: 0;
-}
-
-#contactMe p {
-  width: 50vw;
-  font-size: 2vw;
-  margin: 0;
-}
-
-#contactMe a {
-  width: 15vw;
-  transition: filter 0.5s, transform 0.5s;
-}
-
-#contactMe a:hover {
-  filter: invert(100%);
-  transform: translateY(-3vh);
-  transition: filter 0.5s, transform 0.5s;
-}
+/*Contact Info Styling (Portrait)*/
 
 /*Experiences Page Styling*/
 #experiences {
